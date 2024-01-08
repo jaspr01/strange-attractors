@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Strange Attractors</title>
-  </head>
-  <body>
-    <h1>Strange attractors</h1>
-    <p>Generate a new strange attractor by pressing the space bar.</p>
-    <button id="save">Save strange attractor as png</button>
+</head>
+<body>
+<h1>Strange attractors</h1>
+<p>Generate a new strange attractor by pressing the space bar.</p>
+<label for="attractorFunction"><strong>Attractor type:</strong></label>
+<select id="attractorFunction" name="attractorFunction">
+    <option selected value="clifford">Clifford</option>
+    <option value="de-jong">Peter De Jong</option>
+    <option value="sprott">J.C. Sprott</option>
+</select>
+<br><br>
+<button id="save">Save strange attractor as png</button>
 
-    <canvas id="attractorCanvas" />
+<canvas id="attractorCanvas"/>
 
-    <!--<script src="./clifford-attractor.js"></script>-->
-    <script src="./main.js"></script>
-  </body>
+<script src="./main.js"></script>
+</body>
 </html>
